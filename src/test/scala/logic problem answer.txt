@@ -1,0 +1,138 @@
+1st question answer
+======================
+object LogicQuestion {
+  def main(args: Array[String]): Unit = {
+    val a = scala.io.StdIn.readInt()
+    println(a*1000 + " grams")
+
+  }
+
+} 
+
+2nd Answer 
+=================
+    val a = scala.io.StdIn.readInt()
+    println(a*1.8 + 32 +" F")
+
+3rd Answer
+===========
+    var a = scala.io.StdIn.readInt()
+    var b = scala.io.StdIn.readInt()
+    var c = scala.io.StdIn.readInt()
+    if (a < c && c > b){
+      println(c)
+      }else if (a < b && b > c){
+        println(b)
+    } else{
+      println(a)
+    }
+
+4th Answer
+====================
+    var a = scala.io.StdIn.readInt()
+    if (a > 100 && a < 1000){
+      println(a + " is right number")
+      if (a%2==0){
+        println(a%3)
+      } else {
+        println(a%2)
+      }
+    }
+    else{
+      println(a +" is Wrong number")
+    }
+5th Answer 
+===================
+    var a = scala.io.StdIn.readInt()
+    if (a > 0 && a < 100){
+      if( a > 90 && a < 100){
+        println("Super Smart")
+      } else if(a > 80 && a < 90){
+        println("Smart")
+      } else if (a > 70 && a < 80){
+        println("Smart Enough")
+      } else if(a > 60 && a < 70){
+        println("Just Smart")
+      } else if(a > 35 && a < 60){
+        println("No Smart")
+      } else {
+        println("Dump")
+      }
+
+    }
+    else{
+      println(a +" is not in range")
+    }
+
+6th Answer 
+============
+import scala.annotation.switch
+
+object LogicQuestion {
+  def main(args: Array[String]): Unit = {
+    val number = scala.io.StdIn.readInt()
+    val number2 =scala.io.StdIn.readInt()
+    (number : @switch) match {
+      case 1 => println(number+number2)
+      case 2 => println(number-number2)
+      case 3 => println(number*number2)
+      case _ => println(number/number2)
+    }
+
+
+
+  }
+
+}
+
+7th Answer
+=============
+object LogicQuestion {
+  def main(args: Array[String]): Unit = {
+    val Line = scala.io.StdIn.readLine()
+    println(Line*60)
+
+
+
+  }
+
+}
+
+8TH Answer
+===========
+object Question8 {
+  def main(args: Array[String]): Unit = {
+
+    for(a<-250 to 550){
+
+      if(a%11==0){
+        println(a)
+      }
+    }
+  }
+}
+
+
+
+
+
+
+
+9th Answer 
+===========
+
+object Question9 {
+  def main(args: Array[String]): Unit = {
+    val a = 56
+    val b = 153
+    var sum =0
+
+    for (num<- a to b){
+      sum +=num
+    }
+    println(sum)
+
+
+
+  }
+}
