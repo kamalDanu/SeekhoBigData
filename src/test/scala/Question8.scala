@@ -1,11 +1,16 @@
 object Question8 {
   def main(args: Array[String]): Unit = {
-    var a = 0
-    val num = 250 to 550
-    for (a <- num
-         if a % 11 == 0) {
-      println(a)
+    val a = 251
+    val b = 51
 
+
+    for (num <- a to b by -1) {
+      if(num%2!=0){
+        println(num)
+      }
     }
+
+
+
   }
 }
